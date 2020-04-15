@@ -1,0 +1,26 @@
+{
+  "name": "jsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "rollup --config",
+    "watch": "rollup --config --watch"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^2.6.0",
+    "rollup-plugin-sass": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drakst/jsapp.git"
+  },
+  "author": "Stanislav Drakin <stanislav.drakin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drakst/jsapp/issues"
+  },
+  "homepage": "https://github.com/drakst/jsapp#readme"
+}
