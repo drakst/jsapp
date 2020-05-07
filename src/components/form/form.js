@@ -80,7 +80,7 @@ export default appclass(function(defaults) {
 
 						if (resp) {
 
-							if (resp.error && Object.keys(loading).length) {
+							if (resp.error && Object.keys(resp).length) {
 
 								$form.trigger(vars.respErrorEvent, [resp, $form]);
 								appform.setErrors(resp.error, form, form.dataset.name);
