@@ -4,8 +4,8 @@ export default appclass(function(defaults) {
 
 	const redirect = function(url, response) {
 
-		if ('redirect' in resp) {
-			url = resp.redirect;
+		if ('redirect' in response) {
+			url = response.redirect;
 		}
 
 		if (url == '' || url == true) {
