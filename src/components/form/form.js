@@ -8,7 +8,7 @@ export default appclass(function(defaults) {
 			url = response.redirect;
 		}
 
-		if (url == '' || url == true) {
+		if (url == '' || url == 'true') {
 			window.location.reload();
 		} else if (url) {
 			window.location.href = url.replace(/{[^{}]+}/g, function(key) {
@@ -71,7 +71,7 @@ export default appclass(function(defaults) {
 
 					complete() {
 						loader(false, loaderEl);
-						form.classList.remove(vars.working);
+						form.classList.remove(vars.workingClass);
 					},
 
 					success(resp) {
